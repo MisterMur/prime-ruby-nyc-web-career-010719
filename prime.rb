@@ -3,7 +3,9 @@ def prime?(num)
   if num <2
     return true
   end
-  (2..num).each do |i|
-    
+  (2...num).each do |i|
+    if num%i==0
+      return true
   end
+  return false
 end
